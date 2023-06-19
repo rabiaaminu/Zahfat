@@ -1,0 +1,23 @@
+{%extends 'base.html'%}
+
+{%block content%}
+  <div class="col-md-6 my-2 p-4">
+    <p class="fs-3 fw-bold">Contact</p>
+    <p class="text-capitalize">I am open for any suggestion or just to have a chat</p>
+    <form action="{{url_for('thankyou_page')}}">
+        <div class="row">
+            <div class="col-6">
+              <input type="text" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="Name" name="name">
+            </div>
+            <div class="col-6">
+              <input type="email" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="example@gmail.com" name="email">
+            </div>
+            <div class="my-3">
+              <input type="text" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="Subject" name="subject">
+            </div>
+            <textarea placeholder="Create Message Here....." id="exampleFormControlTextarea1" class="form-control form-control-sm" rows="5" cols="10" name="message"></textarea>
+          </div>
+          <input type="submit" class="btn btn-secondary btn-sm my-3 rounded-pill" value="Send Message">       
+    </form>
+  </div>
+{%endblock content%}

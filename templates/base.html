@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/font/bootstrap-icons.css')}}">
+
+    <title>Restaurant</title>
+</head>
+<body>
+    <!-- Navbar Section -->
+    {% include 'navbar.html' %}
+    <!-- End Navbar Section -->
+
+
+    {%block content%}
+    {%endblock content%}
+
+
+       <!-- Footer Section -->
+       <div class="container-fluid bg-dark text-white py-5">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-4">
+              <p>Quick Links</p>
+              <p>
+                <a class="text-decoration-none text-white" href="">FAQ</a>
+              </p>
+              <p>
+                <a class="text-decoration-none text-white" href="">Services</a>
+              </p>
+              <p>
+                <a class="text-decoration-none text-white" href="">Work</a>
+              </p>
+              <p>
+                <a class="text-decoration-none text-white" href="">Learn</a>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <p>Social Links</p>
+              <div>
+                <a class="text-primary fs-3" href="">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a class="text-danger fs-3" href="">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a class="text-info fs-3" href="">
+                  <i class="bi bi-twitter"></i>
+                </a>
+                <a class="text-success fs-3" href="">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <p>Contact Us</p>
+              <div>
+                <a class="text-secondary fs-3" href="Tell:08067331331">
+                  <i class="bi bi-telephone"></i>
+                </a>
+                <a class="text-secondary fs-3 mx-2" href="mailto: ahmadrabia929@gmail.com">
+                  <i class="bi bi-envelope"></i>
+                </a>
+              </div>
+            </div>
+            <div
+          </div>
+        </div>
+      </div>
+  
+      
+      <script src="{{ url_for ('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+  </body>
+  </html>
